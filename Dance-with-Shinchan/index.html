@@ -1,26 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-   <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Dance with shinchan</title>
- </head>
- <body>
-   <main>
-     <!-------------------Starting Screen of the Game---------------------->
-     <div id="game-intro">
-       <img src="./start screen_img.webp"/>
-     </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dance with shinchan</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <!-------------------Starting Screen of the Game---------------------->
+      <div id="game-intro">
+        <div class="intro-content">
+          <button id="start-button">Start Game</button>
+          <p class="text-intro">
+            <!----INSTRUCTIONS---------------->
+            You must press the key which appears on the screen!
+            <br />
+            If not then you'll face shinchan's anger.
+          </p>
+        </div>
+      </div>
 
+      <!----------------------------Main Game Screen---------------------->
+      <div id="game-container">
+        <div>
+          <p>Score: <span id="score">0</span></p>
+        </div>
 
-     <!----------------------------Main Game Screen---------------------->
-     <div id="game-container"></div>
+        <div id="anger-level-container">
+          <div id="anger-level"></div>
+        </div>
 
+        <div id="requiredKey">Press: A</div>
 
-     <!-----------------------------------Game over---------------------------------->
-     <div id="game-over"></div>
-   </main>
- </body>
+        <img id="shinchan-img" src="./shinchan2-1.png" alt="Shinchan" />
+
+        <div id="game-screen">
+    
+        </div>
+      </div>
+
+      <!-----------------------------------Game over---------------------------------->
+      <div id="game-over" style="display: none;">
+        <img  id="game-over-img" src="./angryshinchan.png copy 2.png" alt="Angry Shinchan" />
+        <h1>Game Over!</h1>
+        <p>Shinchan got too angry :| </p>
+        <br />
+        <button id="restart-button">Restart</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="game.js"></script>
+    <script src="shinchan.js"></script>
+  </body>
 </html>
-
-
