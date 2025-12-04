@@ -24,7 +24,7 @@
       <!----------------------------Main Game Screen---------------------->
       <div id="game-container">
         <div>
-          <p>Score: <span id="score">0</span></p>
+          <p id="score"><span>Score: 0</span></p>
         </div>
 
         <div id="anger-level-container">
@@ -48,9 +48,18 @@
         <br />
         <button id="restart-button">Restart</button>
       </div>
+
+      <!---------------------------------------------GAME WIN SCREEN-------------------->
+       <div id="game-win" style="display:none;">
+        <h1>You Won the Game!</h1>
+        <img src="./shinchan-win.gif" alt="Happy Shinchan" />
+        <br>
+        <button id="play-again-button">Play Again</button>
+       </div>
     </main>
     <script src="script.js"></script>
     <script src="game.js"></script>
     <script src="shinchan.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   </body>
 </html>

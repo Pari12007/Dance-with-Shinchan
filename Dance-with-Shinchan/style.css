@@ -38,12 +38,32 @@
     padding: 0%;
 }
 
-#shinchan {
+#score{
+  font-size : 20px;
+  font-family: 'Arial Black', Gadget, sans-serif;
+  color: black;
+  position: absolute;
+  left: 3%;
+  top: 3%;
+}
 
-    width: 120px;
-    height: 150px;
+#shinchan-img {
+    width: 250px;
+    height: 400px;
     background-size: contain;
     background-repeat: no-repeat;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+}
+
+#requiredKey{
+    font-size: 20px;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    color: black;
+    position: absolute;
+    left: 20%;
+    top: 45%;
 }
 
 #game-over {
@@ -119,5 +139,57 @@
     background-color: red;
 }
 
+#game-win{
+  height: 100vh;
+  width: 100vw;
+  margin-top: -80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Impact, sans-serif;
+  font-size: 60px;
+  color: #ff1c1c; 
+  background-color: rgb(250, 251, 159);
+}
+
+#game-win h1{
+  text-shadow: 3px 3px black;
+  margin-left: 15%;
+}
+
+#play-again-button{
+  font-size: 25px;
+  padding: 10px 20px;
+  margin-left: 45%;
+  border-radius: 4px;
+  border-color: black;
+  &::before{
+     width: 15px;
+      height: 1px;
+      position:absolute;
+      top: 50%;
+      left:0;
+      transform: translate(0, -50%);
+      transition: all 0.2s;
+      transition-delay: 0.1s;
+      content: '';
+  }
+  &:hover{
+      background-color: black;
+      color: rgb(212, 31, 31);
+      &::before{
+          left: 100%;
+          transform: translate(-100%, -50%);
+          background-color: tomato;
+      }
+  }
+}
 
 
+#game-win img{
+  width: 400px;
+  height: 400px;
+  margin-top: -80px;
+  margin-left: 33%;
+}
