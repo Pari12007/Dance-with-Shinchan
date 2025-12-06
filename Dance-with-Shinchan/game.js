@@ -33,26 +33,6 @@ class Game {
     overMusic.pause();
   }
 
-  // startGame(){
-  //   backgroundMusic.play();
-  //   backgroundMusic.currentTime = 0;
-  //   winMusic.pause();
-  //   overMusic.pause();
-  // }
-
-  // gameOverMusic(){
-  //   overMusic.play();
-  //   overMusic.currentTime = 0;
-  //   backgroundMusic.pause();
-  //   winMusic.pause();
-  // }
-
-  // gameWinMusic(){
-  //   winMusic.play();
-  //   winMusic.currentTime = 0;
-  //   backgroundMusic.pause();
-  //   overMusic.pause();
-  // }
 }
 
 document.getElementById("restart-button").addEventListener("click", () => {

@@ -4,6 +4,7 @@ window.onload = function () {
   const playAgainButton = this.document.getElementById("play-again-button");
 
 
+
   let ourGame;
   startButton.addEventListener("click", function () {
     startGame();
@@ -25,80 +26,4 @@ window.onload = function () {
 
   }
 
-  // function startGame(){
-  //   backgroundMusic.play();
-  //   backgroundMusic.currentTime = 0;
-  //   winMusic.pause();
-  //   overMusic.pause();
-  // }
-
-  // function gameOverMusic(){
-  //   overMusic.play();
-  //   overMusic.currentTime = 0;
-  //   backgroundMusic.pause();
-  //   winMusic.pause();
-  // }
-
-  // function gameWinMusic(){
-  //   winMusic.play();
-  //   winMusic.currentTime = 0;
-  //   backgroundMusic.pause();
-  //   overMusic.pause();
-  // }
 };
-
-
-
-
-//classes to get all the screens of game and more....
-
-
-
-//   generateRandomKey() {
-//     const index = Math.floor(Math.random() * this.keys.length);
-//     this.currentKey = this.keys[index];
-
-//     // CLEAR ALL BOXES
-//     Object.values(this.keyBoxes).forEach((box) => (box.innerText = ""));
-
-//     // PUT KEY INSIDE CORRECT BOX
-//     this.keyBoxes[this.currentKey].innerText = this.currentKey;
-//   }
-
-//   listenToKeyPress() {
-//     document.addEventListener("keydown", (event) => {
-//       const pressedKey = event.key.toUpperCase();
-//       if (pressedKey === this.currentKey) {
-//         this.score += 1;
-//         document.getElementById("score").innerText = this.score;
-//         this.generateRandomKey();
-//       } else {
-//         console.log("Wrong key pressed");
-//       }
-//     });
-//   }
-
-
-// class Grass {
-//     constructor(x, y, width, height) {
-//         this.x = x;
-//         this.y = y;
-//         this.width = width;
-//         this.height = height;
-//         this.element = document.createElement("img")
-//         this.gameScreen = document.getElementById("game-screen")
-//         this.element.src = "./shinchan-dance1.png   "
-
-//     }
-//     drawElement(){
-//         this.element.style.position = "absolute";
-//         this.element.style.left = this.x + "px";
-//         this.element.style.top = this.y + "px";
-//         this.element.style.width = this.width + "px";
-//         this.element.style.height = this.height + "px";
-//         this.gameScreen.appendChild(this.element);
-//    }
-
-// }
-
-
