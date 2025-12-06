@@ -1,5 +1,5 @@
 #game-intro{
-    background-image: url("./start\ screen_img.webp");
+    background-image: url("./shinchan\ images/start screen_img.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -28,7 +28,7 @@
 
 #game-container{
     display:none;
-    background-image: url("./screenbg-tr.png");
+    background-image: url("./shinchan images/screenbg-tr.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

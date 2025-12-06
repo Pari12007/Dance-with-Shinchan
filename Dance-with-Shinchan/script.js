@@ -2,6 +2,8 @@ window.onload = function () {
   const startButton = document.getElementById("start-button");
   const restartButton = this.document.getElementById("restart-button");
   const playAgainButton = this.document.getElementById("play-again-button");
+
+
   let ourGame;
   startButton.addEventListener("click", function () {
     startGame();
@@ -20,21 +22,33 @@ window.onload = function () {
     ourGame = new Game();
     ourGame.start();
     // setupKeyListener();
+
   }
 
-  // function setupKeyListener() {
-  //   document.addEventListener("keydown", (event) => { 
-  //     const pressedKey = event.key.toUpperCase();
+  // function startGame(){
+  //   backgroundMusic.play();
+  //   backgroundMusic.currentTime = 0;
+  //   winMusic.pause();
+  //   overMusic.pause();
+  // }
 
-  //     if (pressedKey === ourGame.ShinchanDance.currentKey){
-  //       ourGame.ShinchanDance.increaseScore(ourGame);
-  //     }else{
-  //         ourGame.ShinchanDance.increaseAnger();
-  //     }
-    
-  //   });
+  // function gameOverMusic(){
+  //   overMusic.play();
+  //   overMusic.currentTime = 0;
+  //   backgroundMusic.pause();
+  //   winMusic.pause();
+  // }
+
+  // function gameWinMusic(){
+  //   winMusic.play();
+  //   winMusic.currentTime = 0;
+  //   backgroundMusic.pause();
+  //   overMusic.pause();
   // }
 };
+
+
+
 
 //classes to get all the screens of game and more....
 

@@ -33,29 +33,36 @@
 
         <div id="requiredKey">Press: A</div>
 
-        <img id="shinchan-img" src="./shinchan2-1.png" alt="Shinchan" />
+        <img id="shinchan-img" src="./shinchan images/shinchan2-1.png" alt="Shinchan" />
 
         <div id="game-screen">
     
         </div>
+
+        <audio id="background-music" src="./shinchan_theme_song.mp3" loop></audio>
       </div>
 
       <!-----------------------------------Game over---------------------------------->
       <div id="game-over" style="display: none;">
-        <img  id="game-over-img" src="./angryshinchan.png copy 2.png" alt="Angry Shinchan" />
+        <img  id="game-over-img" src="./shinchan images/angryshinchan.png copy 2.png" alt="Angry Shinchan" />
         <h1>Game Over!</h1>
         <p>Shinchan got too angry :| </p>
         <br />
         <button id="restart-button">Restart</button>
+
+        <audio id="overMusic" src="./shinchan_beating.mp3"></audio>
       </div>
 
       <!---------------------------------------------GAME WIN SCREEN-------------------->
        <div id="game-win" style="display:none;">
         <h1>You Won the Game!</h1>
-        <img src="./shinchan-win.gif" alt="Happy Shinchan" />
+        <img src="./shinchan images/shinchan-win.gif" alt="Happy Shinchan" />
         <br>
         <button id="play-again-button">Play Again</button>
+
+        <audio id="winMusic" src="./shinchan_good_very.mp3"></audio>
        </div>
+
     </main>
     <script src="script.js"></script>
     <script src="game.js"></script>

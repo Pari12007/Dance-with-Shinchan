@@ -14,11 +14,11 @@ class ShinchanDance {
     this.keys = ["A", "S", "D", "W"];
     this.currentKey = "";
     this.danceFrames = [
-      "./shinchan2-2.png",
-      "./shinchan2-3.png",
-      "./shinchan2-4.png",
-      "./shinchan2-5.png",
-      "./shinchan2-6.png",
+     "./shinchan images/shinchan2-2.png",
+     "./shinchan images/shinchan2-3.png",
+     "./shinchan images/shinchan2-4.png",
+     "./shinchan images/shinchan2-5.png",
+     "./shinchan images/shinchan2-6.png",
     ];
     this.frameIndex = 0;
     this.gameScreen = document.getElementById("game-screen");
@@ -27,7 +27,10 @@ class ShinchanDance {
     this.requiredKeyText = document.getElementById("requiredKey");
     this.score = 0;
     this.scoreElement = document.getElementById("score");
+    this.backgroungndMusic = document.getElementById("background-music");
   }
+
+
 
   newKey() {
     this.currentKey = this.keys[Math.floor(Math.random() * this.keys.length)];
@@ -58,6 +61,12 @@ class ShinchanDance {
       document.getElementById("game-container").style.display = "none";
       document.getElementById("game-over").style.display = "block";
       document.removeEventListener("keydown", this.keyHandler);
+
+      const overMusic = document.getElementById("overMusic");
+      overMusic.play();
+      overMusic.currentTime = 0;
+      this.backgroungndMusic.pause();
+      winMusic.pause();
     }
   }
 
@@ -68,6 +77,12 @@ class ShinchanDance {
     document.getElementById("game-win").style.display = "block";
     document.removeEventListener("keydown", this.keyHandler);
     confetti();
+
+    const winMusic = document.getElementById("winMusic");
+    winMusic.play();
+    winMusic.currentTime = 0;
+    this.backgroungndMusic.pause();
+    overMusic.pause();
   }
 }
 
