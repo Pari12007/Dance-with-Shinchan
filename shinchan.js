@@ -82,7 +82,7 @@ class ShinchanDance {
     winMusic.play();
     winMusic.currentTime = 0;
     this.backgroungndMusic.pause();
-    overMusic.pause();
+    overMusic.pause(); 
   }
 }
 
@@ -97,7 +97,7 @@ document.addEventListener("keydown", (event) => {
     game.decreaseAnger();
     game.newKey();
     
-    if(game.score >= 10){
+    if(game.score >= 20){
     game.winGame();
     }
 
@@ -111,6 +111,6 @@ game.newKey();
   game.angerTimer = setInterval(() => {
     game.increaseAnger();
     game.newKey();
-  }, 2000); 
+  }, 1000); 
 
   
