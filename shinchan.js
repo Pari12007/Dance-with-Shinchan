@@ -14,11 +14,11 @@ class ShinchanDance {
     this.keys = ["A", "S", "D", "W"];
     this.currentKey = "";
     this.danceFrames = [
-     "./shinchan images/shinchan2-2.png",
-     "./shinchan images/shinchan2-3.png",
-     "./shinchan images/shinchan2-4.png",
-     "./shinchan images/shinchan2-5.png",
-     "./shinchan images/shinchan2-6.png",
+     "./shinchan-images/shinchan2-2.png",
+     "./shinchan-images/shinchan2-3.png",
+     "./shinchan-images/shinchan2-4.png",
+     "./shinchan-images/shinchan2-5.png",
+     "./shinchan-images/shinchan2-6.png",
     ];
     this.frameIndex = 0;
     this.gameScreen = document.getElementById("game-screen");
